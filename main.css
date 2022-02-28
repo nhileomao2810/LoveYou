@@ -1,0 +1,53 @@
+:root {
+    --color: rgb(0, 0, 0);
+    --width: 300px;
+    --color-text: rgb(182, 211, 236);
+}
+
+.block {
+    position: relative;
+    width: var(--width);
+    height: 400px;
+    left: calc(50% - var(--width) / 2);
+    top: 100px;
+    border-radius: 6px;
+    background-color: rgb(193, 243, 226);
+}
+
+.text {
+    position: absolute;
+    display: inline-block;
+    top: 10px;
+    font-size: 20px;
+    left: calc(50% - 114px);
+}
+
+.no, .yes {
+    border-radius: 4px;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: var(--color-text);
+}
+
+.yes {
+    /* 80 -> 180
+    100 -> 200 */
+    top: 100px;
+    left: 130px;
+    font-size: 20px;
+}
+
+.no {
+    top: 180px;
+    left: 150px;
+}
+
+.one, .two{
+    position: absolute;
+    top: 16px;
+    color: var(--color);
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%);
+}
